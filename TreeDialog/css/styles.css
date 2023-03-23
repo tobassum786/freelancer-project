@@ -80,6 +80,10 @@ section {
     color: var(--secondary-color);
 }
 
+.nav-item.active {
+    color: var(--secondary-color);
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -508,4 +512,185 @@ footer {
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
+}
+
+/*responsive design*/
+@media (max-width: 991px) {
+
+    nav {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    section {
+        padding: 60px;
+    }
+
+    #menu {
+        position: fixed;
+        top: 109px;
+        left: -991px;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--base-color);
+        transition: .5s;
+        z-index: 999;
+        border-top: 1px solid var(--font-color);
+    }
+
+    #menu.active {
+        left: 0;
+    }
+
+    .nav-bar #menu li a  {
+        color: var(--font-color);
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    
+    .navbar #menu li a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .nav-bar {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .burger-menu {
+        width: 40px;
+        height: 40px;
+        background: url(../Images/icons/burger.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .burer-menu.active {
+        background: url(../Images/icons/close.png);
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    
+/*    .banner*/
+    .banner {
+        padding: 0 50px;
+    }
+    
+    .banner .text-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner .text-content .btn {
+        margin-top: 1.5rem;
+    } 
+    
+    .services .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .content-container .img-g {
+        margin-bottom: 1.5rem;
+    }
+    
+    .content-container .text-content {
+        margin-bottom: 2.5rem;
+    }
+    
+    .services .card-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post-container .card-container {
+        display: flex;
+        
+    }
+
+}
+
+/*responsive design*/
+@media (max-width: 640px) {
+
+    nav {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    section {
+        padding: 60px;
+    }
+
+    #menu {
+        position: fixed;
+        top: 109px;
+        left: -640px;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--base-color);
+        transition: .5s;
+        z-index: 999;
+        border-top: 1px solid var(--font-color);
+    }
+
+    #menu.active {
+        left: 0;
+    }
+
+    .nav-bar #menu li a  {
+        color: var(--font-color);
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    
+    .navbar #menu li a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .nav-bar {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .burger-menu {
+        width: 40px;
+        height: 40px;
+        background: url(../Images/icons/burger.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .burer-menu.active {
+        background: url(../Images/icons/close.png);
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
 }
