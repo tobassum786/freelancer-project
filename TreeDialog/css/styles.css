@@ -139,6 +139,12 @@ section {
     cursor: pointer;
 }
 
+.banner .text-content .btn:hover {
+    border: 1px solid var(--secondary-color);
+    background: var(--base-color);
+    color: var(--secondary-color);
+}
+
 /*services container*/
 .services {
     position: relative;
@@ -203,6 +209,12 @@ section {
     cursor: pointer;
 }
 
+
+.content-container .text-content .btn-view:hover {
+    background: var(--secondary-color);
+    color: var(--base-color);
+}
+
 .content-container .text-content .btn-view i {
     padding-left: 1rem;
 }
@@ -226,17 +238,18 @@ section {
     display: flex;
     flex-flow: row wrap;
     margin-top: 54px;
+    justify-content: space-between;
 }
 
 .card-content .card-body {
-    width: 317px;
+    width: 340px;
     height: 227px;
     background-color: #EBEBEB;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 14px 14px 0;
+    margin: 0 0 14px 0;
     border-radius: 15px;
 }
 
@@ -295,6 +308,12 @@ section {
     cursor: pointer;
 }
 
+.join-us-container .btn-join:hover {
+    border: 1px solid var(--secondary-color);
+    background: var(--base-color);
+    color: var(--secondary-color);
+}
+
 /*posts container section*/
 .post-container {
     padding: 79px 151px;
@@ -328,6 +347,11 @@ section {
 
 .header .btn-view i {
     padding-left: 0.6rem;
+}
+
+.header .btn-view:hover {
+    background: var(--secondary-color);
+    color: var(--base-color);
 }
 
 /*home page post section*/
@@ -383,7 +407,8 @@ section {
 
 /*newsletter sections*/
 .newsletter {
-    height: 177px;
+    height: 100px;
+    padding: 100px 151px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -434,14 +459,19 @@ input[type='email'] {
     height: 47px;
     padding: 15px 23px;
     background: var(--base-color);
-    border-radius: 5px;
-    font-size: 0.875em;
+    border-radius: 0 5px 5px 0;
+    font-size: 0.835em;
     line-height: 21px;
     font-weight: 400;
     text-transform: capitalize;
     color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
+.search-bar .subcrib-btn:hover {
+    background: var(--secondary-color);
+    color: var(--base-color);
+}
 /*footer section main */
 
 footer {

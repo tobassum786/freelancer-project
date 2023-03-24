@@ -109,12 +109,12 @@ section {
 .banner .text-content {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 .banner .text-content h1 {
-    width: 316px;
+    width: 413px;
     font-size: 3.750em;
     font-weight: 700;
     line-height: 90px;
@@ -148,10 +148,8 @@ section {
 .content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 93px;
-    margin: 0 auto;
 }
 
 .content .img-g {
@@ -161,6 +159,10 @@ section {
 
 .content .img-g img {
     min-width: 100%;
+}
+
+.content .text-content {
+    width: 522px;
 }
 
 .content .text-content p {
@@ -173,98 +175,228 @@ section {
     padding-bottom: 1.563em;
 }
 
-/*heading container*/
-
-.heading {
-    width: 747px;
-    height: 110px;
-    margin-top: 70px;
+/*post display container*/
+.post {
+    padding-bottom: 27px;
 }
 
-.heading p {
-    font-size: 1.563em;
+.post-container {
+    position: relative;
+    display: inline-block;
+    width: 698.35px;
+    margin-top: 72px;
+    padding: 0 1.5rem;
+}
+
+.post-container .post-body img-g {
+    width: 648px;
+}
+
+.text-container {
+    padding: 37.5px 54px;
+    margin-bottom: 93px;
+}
+
+.text-container .heading p {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.text-container .posting-data p {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--secondary-color);
+    word-spacing: 0.5rem;
+    margin-bottom: 17px;
+}
+
+.text-container .post-content p {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.text-container .btn {
+    width: 158px;
+    height: 42px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 9px 27px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
     font-weight: 500;
-    line-height: 52.5px;
 }
 
-.mask-image {
+.text-container .btn i {
+    padding-left: 0.8rem;
+}
+
+.text-container .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--base-color);
+}
+
+/*side bar*/
+
+.side-bar {
+    position: absolute;
+    top: 493px;
+    left: 854px;
+}
+
+.side-bar .catagories {
+    position: relative;
+    width: 296px;
+    height: 401px auto;
+    margin: 41px 24px;
+    margin-bottom: 31px;
+    border: 1px solid #EBEBEB;
+}
+
+.recent-posts .heading p,
+.catagories .heading p {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 36px;
+    margin-bottom: 43px;
+    padding-top: 1rem;
+}
+
+.catagories .catagory a {
     position: relative;
     display: flex;
-    margin-top: 62px;
-    justify-content: center;
-    width: 100%;
-    height: 292px;
-    background: url(../Images/Mask%20group.png);
-    background-position: right;
-    background-size: cover;
+    justify-content: space-between;
+    color: var(--font-color);
+    margin-bottom: 0.7rem;
 }
 
-.content {
-    margin-top: 70px;
-}
-
-.content .text-content {
-    width: 418px; 
-}
-
-.content .list-items {
-    width: calc(100% - 505px);
-}
-
-.content .list-items .item {
-    width: 402px;
-    height: 49px;
-    border: 1px solid var(--secondary-color);
-    margin-left: 135px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-}
-
-.content .list-items .item p {
-    text-align: center;
-    padding-top: 13px;
+.catagories .catagory a:hover {
     color: var(--secondary-color);
-    font-size: 0.875em;
-}
-.content .list-items .item p i {
-    margin-right: 1rem;
 }
 
-/*join us container*/
-.joinus-container {
-    padding: 83px 0 0 0;
-    background-color: var(--secondary-color);
-    height: 312px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.active {
+    color: var(--secondary-color);
 }
 
-.joinus-container .join-us-container p {
-    font-size: 1.5em;
-    width: 725px;
-    height: 95px;
-    line-height: 36px;
-    color: var(--base-color);
-}
-
-.join-us-container .btn-join {
-    width: 236px;
-    height: 60px;
+.catagories .catagory p {
     text-transform: capitalize;
-    color: var(--base-color);
-    background: none;
-    border: 1px solid var(--base-color);
-    border-radius: 10px;
-    font-size: 1.125em;
-    cursor: pointer;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.join-us-container .btn-join:hover {
-    border: 1px solid var(--secondary-color);
-    background: var(--base-color);
+/*recent posts container*/
+.recent-posts {
+    position: relative;
+    width: 296px;
+    height: 401px auto;
+    margin: 41px 24px;
+    border: 1px solid #EBEBEB;
+}
+
+.post-data {
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.post-data .post-content {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 2rem;
+}
+
+/*faq-data-container*/
+
+.faq-data {
+    width: 296px;
+    height: 417px auto;
+    margin: 41px 24px;
+    padding: 92px 44px;
+    background-color: var(--secondary-color);
+}
+
+.faq-data .heading p {
+    font-size: 1.725em;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 21px;
+    color: var(--base-color);
+    
+}
+
+.faq-data .tel p {
+    font-size: 1.725em;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 2.2rem;
+    color: var(--base-color);
+}
+
+.faq-data .btn {
+    width: 158px;
+    height: 42px;
+    border: 1px solid var(--base-color);
+    border-radius: 5px;
+    padding: 9px 27px;
+    color: var(--base-color);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.faq-data .btn i {
+    padding-left: 0.8rem;
+}
+
+.faq-data .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--base-color);
+}
+
+/*pagination*/
+
+.pagination {
+    padding: 50px 151px;
+    background-color: #EBEBEB;
+}
+
+.pagination .page-container {
+    display: flex;
+    width: 698.35px;
+    padding: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination .page-container a {
     color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.pagination .page-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.pagination .page-container ul li a {
+    margin: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 100px;
+    text-align: center;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.pagination .page-container i {
+    padding: 1rem;
 }
 
 /*footer section main */
@@ -278,7 +410,6 @@ footer {
     padding-top: 82px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
 }
 
