@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --base-color: #FFFFFF;
+    --font-color: #000000;
+    --secondary-color: #0071BC;
+}
+
+/*resets*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 151px;
+}
+
+/*navigation*/
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 19px 151px;
+    line-height: 45px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--base-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 49.19px;
+    height: 75px;
+}
+
+.logo p {
+    font-size: 1.875em;
+    font-weight: 700;
+    padding-left: 16.81px;
+    text-transform: capitalize;
+}
+
+.logo span {
+    font-size: 1.875em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items .nav-item {
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 2rem;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.nav-items .nav-item:hover {
+    color: var(--secondary-color);
+}
+
+.nav-item.active {
+    color: var(--secondary-color);
+}

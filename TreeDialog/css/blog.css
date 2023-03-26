@@ -15,6 +15,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    width: 100%;
+}
+
 ul, li, a {
     list-style: none;
     text-decoration: none;
@@ -144,63 +148,47 @@ section {
     cursor: pointer;
 }
 
-/*about container*/
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 93px;
-}
-
-.content .img-g {
-    width: 400px;
-    height: 292px;
-}
-
-.content .img-g img {
-    min-width: 100%;
-}
-
-.content .text-content {
-    width: 522px;
-}
-
-.content .text-content p {
-    font-size: 0.875em;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.content .text-content p:nth-child(odd) {
-    padding-bottom: 1.563em;
-}
-
 /*post display container*/
 .post {
-    padding-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .post-container {
     position: relative;
     display: inline-block;
-    width: 698.35px;
     margin-top: 72px;
     padding: 0 1.5rem;
 }
 
+.post-container .post-body {
+     width: 80%;
+}
+
 .post-container .post-body img-g {
-    width: 648px;
+    width: 80%;
+}
+
+.post-body img-g img {
+    max-width: 100%;
+    height: auto;
 }
 
 .text-container {
+    width: 100%;
     padding: 37.5px 54px;
     margin-bottom: 93px;
 }
 
-.text-container .heading p {
+.text-container a .heading p {
     font-size: 26px;
     font-weight: 400;
     line-height: 39px;
+    color: var(--font-color);
+}
+
+.text-container a .heading p:hover {
+    color: var(--secondary-color);
 }
 
 .text-container .posting-data p {
@@ -242,16 +230,15 @@ section {
 /*side bar*/
 
 .side-bar {
-    position: absolute;
-    top: 493px;
-    left: 854px;
+    position: relative;
+    width: 100%;
 }
 
 .side-bar .catagories {
     position: relative;
     width: 296px;
     height: 401px auto;
-    margin: 41px 24px;
+    padding: 41px 24px;
     margin-bottom: 31px;
     border: 1px solid #EBEBEB;
 }
@@ -294,7 +281,7 @@ section {
     position: relative;
     width: 296px;
     height: 401px auto;
-    margin: 41px 24px;
+    padding: 41px 24px;
     border: 1px solid #EBEBEB;
 }
 
@@ -315,9 +302,9 @@ section {
 .faq-data {
     width: 296px;
     height: 417px auto;
-    margin: 41px 24px;
     padding: 92px 44px;
     background-color: var(--secondary-color);
+    margin-top: 31px;
 }
 
 .faq-data .heading p {
@@ -471,5 +458,115 @@ footer {
     line-height: 24px;
 }
 
+.ft-form .btn {
+    padding: 8px 16px;
+    background: var(--secondary-color);
+    color: var(--base-color);
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+.ft-form .btn:hover {
+    background: var(--base-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+/*responsive*/
+@media (max-width: 991px) {
+    html {
+        width: 100vw;
+    }
+    section {
+        padding: 100px 80px;
+    }
+    
+    .post, .pagination {
+        display: block;
+        padding: 20px 50px;
+        margin: 100px auto;
+    }
+    
+    .post-body .post-container .text-container {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .side-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+    }
+
+     #menu {
+        position: fixed;
+        top: 109px;
+        left: -991px;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--base-color);
+        transition: .5s;
+        z-index: 999;
+        border-top: 1px solid var(--font-color);
+    }
+
+    #menu.active {
+        left: 0;
+    }
+
+    .nav-bar #menu li a  {
+        color: var(--font-color);
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    
+    .navbar #menu li a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .nav-bar {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .burger-menu {
+        width: 40px;
+        height: 40px;
+        background: url(../Images/icons/burger.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .burer-menu.active {
+        background: url(../Images/icons/close.png);
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    
+    
+    .ft-row-main {
+        padding: 20px 50px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    
+    .ft-title {
+        width: 100%;
+        padding-top: 2rem;
+    }
+}
 
 
