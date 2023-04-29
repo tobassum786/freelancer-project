@@ -14,3 +14,11 @@ stars.forEach((star, index1) => {
   });
 });
 
+//reveal the hidden content
+
+var model = document.getElementById("hidden__content");
+const backBtn = document.getElementById('close');
+
+backBtn.onclick = function() {
+    model.style.display = "none";
+}
