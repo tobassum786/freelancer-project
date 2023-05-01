@@ -44,7 +44,7 @@
 
     <section class="page-header">
         <div class="container">
-            <p class="label h3">Browse</p>
+            <p data-banner="articles" class="label h3">Browse</p>
             <div class="search__header col-md-12">
                 <div class="form d-flex">
                     <i class="fa fa-search"></i>
@@ -72,9 +72,8 @@
     <section class="post__listing mb-5 row align-items-start align-items-xl-center col-md-12 col-lg-12 col-xl-12 w-100">
         <div class="container d-flex gap-3 flex-xs-wrap flex-sm-wrap-reverse flex-md-wrap-reverse flex-lg-nowrap mx-md-0 mx-sm-0 justify-content-md-center justify-content-sm-center ">
             <aside class="side__bar col-sm-auto col-lg-3 col-md-12 mx-md-0 mt-md-0 mt-lg-4 mt-4 ms-4 ms-md-4 ms-sm-0">
-                <label for="toggle" class="fa solid fa-sliders toggle__label d-lg-none"></label>
-                <input type="checkbox" name="toggle" id="toggle" class=" d-md-none d-lg-none check-none">
-                <div class="side__bar-items" id="hidden__content">
+                <button class="fa solid fa-sliders toggle__label d-lg-none model-btn"></button>
+                <div class="side__bar-items hidden__content">
                     <div class="search__box border rounded col-md-auto p-3 bg-light rounded" id="search__box-sm">
                         <a href="" class="toggle__close d-lg-none" id="close"><i class="fa-solid fa-arrow-left mb-3"></i></a>
                         <div class="search__box-title d-flex justify-content-between align-items-center">
@@ -122,7 +121,6 @@
                                 <p class="h6 text-capitalize">reviews</p>
                                 <small><a href="#" class="text-capitalize text-decoration-none">clear</a></small>
                             </div>
-                            <button class="btn btn-primary mt-3 text-capitalize">search</button>
                         </form>
                     </div>
                     <!--                    catagories box-->
@@ -196,9 +194,10 @@
                         <div class="view__all d-flex justify-content-center mt-1">
                             <small><a href="#" class="text-capitalize text-decoration-none">view all catagories(20)</a></small>
                         </div>
+                        <button class="btn btn-primary mt-3 text-capitalize">search</button>
                     </div>
                     <!--                   recent posts-->
-                    <div class="recent__post border rounded col-md-auto p-3 mt-3 bg-light rounded">
+                    <div class="recent__post border rounded col-md-auto p-3 mt-3 bg-light rounded d-none">
                         <div class="recent_post-title">
                             <p class="h6 text-capitalize text-center">recent posts</p>
                         </div>
@@ -492,12 +491,13 @@
         <div class="icon">
             <a href="" class="text-black"><i class="bi bi-house-door fw-bold"></i></a>
         </div>
-        <label for="popup" class="bi bi-search"></label>
-        <input type="checkbox" id="popup">
+        <button class="pop__btn active">
+               <i class="bi bi-search btn-glasss"></i>
+        </button>
         <div class="popup__wrapper d-lg-none">
             <div class="popup__inner hidden__popup">
                 <div class="popup__header">
-                    <p class="h3 text-capitalize">browse</p>
+                    <p data-heading="articles" class="h3 text-capitalize">browse</p>
                 </div>
                 <div class="popup__content">
                     <button class="btn btn-primary text-capitalize">articles</button>

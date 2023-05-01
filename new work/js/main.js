@@ -16,10 +16,43 @@ stars.forEach((star, index1) => {
 
 //reveal the hidden content
 
-var model = document.getElementById("hidden__content");
-const backBtn = document.getElementById('close');
+//=================popup model============
+const model = document.querySelector('.hidden__content');
+var closeBtn = document.getElementById("close");
 
-backBtn.onclick = function() {
+closeBtn.onclick = function() {
     model.style.display = "none";
 }
+
+const rvBtn = document.querySelector('.model-btn');
+const hiddenModel = document.querySelector('.hidden__content');
+
+function revealModel() {
+    if(hiddenModel.classList.contains('show__model')) {
+        hiddenModel.classList.remove('show__model')
+        return false;
+    } else {
+        hiddenModel.classList.add('show__model')
+        return false;
+    }
+}
+
+rvBtn.addEventListener('click', revealModel);
+
+////show pop up
+
+const btnP = document.querySelector('.btn-glasss');
+const hiddenPop = document.querySelector('.popup__wrapper');
+
+function showPopup (){
+    if(hiddenPop.classList.contains('show')) {
+        hiddenPop.classList.remove('show')
+        return false;
+    } else {
+        hiddenPop.classList.add('show')
+        return false;
+    }
+}
+
+btnP.addEventListener('click', showPopup);
 
