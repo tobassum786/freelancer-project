@@ -22,3 +22,4 @@ const backBtn = document.getElementById('close');
 backBtn.onclick = function() {
     model.style.display = "none";
 }
+
