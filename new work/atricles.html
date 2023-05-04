@@ -45,9 +45,9 @@
     <section class="page-header">
         <div class="container">
             <p data-banner="articles" class="label h3">Browse</p>
-            <div class="search__header col-md-12">
-                <div class="form d-flex">
-                    <i class="fa fa-search"></i>
+            <div class="row search__header col-11 col-sm-12 col-md-12">
+                <div class="form d-flex row-items-start col-12 col-md-12">
+                    <i class="fa fa-search ps-2"></i>
                     <input type="text" class="form-control form-input">
                     <button class="btn btn-outline-light ms-2">Search</button>
                 </div>
@@ -69,10 +69,10 @@
     </section>
 
     <!--post listing content here-->
-    <section class="post__listing mb-5 row align-items-start align-items-xl-center col-md-12 col-lg-12 col-xl-12 w-100">
-        <div class="container d-flex gap-3 flex-xs-wrap flex-sm-wrap-reverse flex-md-wrap-reverse flex-lg-nowrap mx-md-0 mx-sm-0 justify-content-md-center justify-content-sm-center ">
-            <aside class="side__bar col-sm-auto col-lg-3 col-md-12 mx-md-0 mt-md-0 mt-lg-4 mt-4 ms-4 ms-md-4 ms-sm-0">
-                <button class="fa solid fa-sliders toggle__label d-lg-none model-btn"></button>
+    <section class="post__listing mb-5 row align-items-start align-items-xl-center col-md-12 col-lg-12 col-xl-12 mx-md-auto ms-sm-auto">
+        <div class="container d-flex gap-3 flex-xs-wrap flex-sm-wrap-reverse flex-md-wrap-reverse flex-lg-nowrap mx-md-0 mx-sm-0 justify-content-md-center justify-content-sm-center">
+            <aside class="side__bar col-sm-auto col-lg-3 col-md-12 mx-md-0 mt-md-0 mt-lg-3 mt-3 ms-4 ms-md-0 ms-sm-0">
+                <button class="fa solid fa-sliders toggle__label d-lg-none model-btn col-1"></button>
                 <div class="side__bar-items hidden__content">
                     <div class="search__box border rounded col-md-auto p-3 bg-light rounded" id="search__box-sm">
                         <a href="" class="toggle__close d-lg-none" id="close"><i class="fa-solid fa-arrow-left mb-3"></i></a>
@@ -240,7 +240,7 @@
                 </div>
             </aside>
             <!--            posts-listings-->
-            <section class="blog__posts-lists container mt-4 bg-light p-2 rounded xs-mt">
+            <section class="blog__posts-lists container-fluid mt-3 bg-light p-2 rounded xs-mt">
                 <div class="sorting__data d-flex align-items-center">
                     <div class="d-flex align-items-center col-sm-12 justify-content-md-between justify-content-sm-between  col-md-12 justify-content-xl-between col-lg-12 p-auto m-auto">
                         <div class="result">
@@ -257,47 +257,45 @@
                     </div>
                 </div>
                 <div class="mt-3 blog__posts-items col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="blog__post-body border container rounded d-flex flex-start align-items-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start p-3 mt-3 xs-flex-wrap">
-                        <div class="img-g container-fluid m-auto p-auto">
-                            <img src="./img/post-1.png" alt="post-1" class="figure-img img-fluid rounded">
-                        </div>
-                        <div class="text__content text-start m-auto p-auto w-auto">
-                            <div class="post__title">
+                    <div class="blog__post-body border container rounded d-flex flex-wrap flex-sm-nowrap flex-md-nowrap p-3 mt-3">
+                        <div class="row-1 d-flex m-auto p-auto">
+                           <div class="img-g">
+                            <img src="./img/post-1.png" alt="post-1" class="figure-img img-fluid float-left rounded">
+                            </div>
+                            <div class="col">
                                 <p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident temporibus quaerat.</p>
-                            </div>
-                            <small class="blog-post__detail d-flex align-items-center py-1 text-black-50">
-                                <div class="card-avatar">
-                                    <img class="img-thumbnail me-2" src="img/avatar.png" alt="" width="30px">
-                                </div>by<span class="card-author ps-1 text-black">Admin</span>
-                                <span class="card-date"><i class="fa-solid fa-clock px-1"></i>May 2, 2020</span>
-                            </small>
-                            <div class="post__text">
-                                <p class="text-secondary pt-2 lh-sm mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aut, accusamus? In iste culpa dolore, minima doloremque tempora molestiae odio unde sed harum sequi reiciendis, odit, ex doloribus voluptatibus cupiditate?<a href="#" class="ms-2">more</a></p>
-                            </div>
-                            <div class="post__catagory">
-                                <small class="text-primary text-uppercase fw-bold">tree worker</small>
-                                <span class="h4 ms-3">.</span>
-                                <small class="text-primary text-uppercase fw-bold ms-3">botany & soil science</small>
-                            </div>
-                            <div class="starrating2 risingstar d-flex flex-row-reverse float-start mt-2">
-                                <div class="coments ms-3">
-                                    <i class="fa-regular fa-comment-dots"></i>
-                                    <span>32</span>
+                                <small class="blog-post__detail d-flex align-items-center py-1 text-black-50">
+                                    <div class="card-avatar">
+                                        <img class="img-thumbnail me-2" src="img/avatar.png" alt="" width="30px">
+                                    </div>by<span class="card-author ps-1 text-black">Admin</span>
+                                    <span class="card-date"><i class="fa-solid fa-clock px-1"></i>May 2, 2020</span>
+                                </small>
+                                <p class="text-secondary pt-2 lh-sm mb-1 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aut, accusamus? In iste culpa dolore, minima doloremque tempora molestiae odio unde sed harum sequi reiciendis, odit, ex doloribus voluptatibus cupiditate?<a href="#" class="ms-2">more</a></p>
+                                <div class="post__catagory">
+                                    <small class="text-primary text-uppercase fw-bold">tree worker</small>
+                                    <span class="h4 ms-3">.</span>
+                                    <small class="text-primary text-uppercase fw-bold ms-3">botany & soil science</small>
                                 </div>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5.0</span>
+                                <div class="starrating2 risingstar d-flex flex-row-reverse float-start mt-2">
+                                    <div class="coments ms-3">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                        <span>32</span>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>5.0</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="blog__post-body border container rounded d-flex flex-start align-items-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start p-3 mt-3 xs-flex-wrap">
+                    <div class="blog__post-body border container-fluid rounded d-flex flex-wrap flex-sm-nowrap flex-md-nowrap align-items-center p-3 mt-3">
                         <div class="img-g  container-fluid m-auto p-auto">
-                            <img src="./img/post-2.png" alt="post-1" class="figure-img img-fluid rounded">
+                            <img src="./img/post-2.png" alt="post-1" class="figure-img rounded">
                         </div>
                         <div class="text__content text-start p-auto m-auto">
                             <div class="post__title">
@@ -310,7 +308,7 @@
                                 <span class="card-date"><i class="fa-solid fa-clock px-1"></i>May 2, 2020</span>
                             </small>
                             <div class="post__text">
-                                <p class="text-secondary pt-2 lh-sm mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aut, accusamus? In iste culpa dolore, minima doloremque tempora molestiae odio unde sed harum sequi reiciendis, odit, ex doloribus voluptatibus cupiditate?<a href="#" class="ms-2">more</a></p>
+                                <p class="text-secondary pt-2 lh-sm mb-1 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aut, accusamus? In iste culpa dolore, minima doloremque tempora molestiae odio unde sed harum sequi reiciendis, odit, ex doloribus voluptatibus cupiditate?<a href="#" class="ms-2">more</a></p>
                             </div>
                             <div class="post__catagory">
                                 <small class="text-primary text-uppercase fw-bold">tree worker</small>
@@ -333,9 +331,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog__post-body border container rounded d-flex flex-start align-items-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start p-3 mt-3 xs-flex-wrap">
+                    <div class="blog__post-body border container-fluid rounded d-flex flex-wrap flex-sm-nowrap flex-md-nowrap align-items-center p-3 mt-3">
                         <div class="img-g  container-fluid m-auto p-auto">
-                            <img src="./img/post-3.png" alt="post-1" class="figure-img img-fluid rounded">
+                            <img src="./img/post-3.png" alt="post-1" class="figure-img rounded">
                         </div>
                         <div class="text__content text-start m-auto p-auto">
                             <div class="post__title">
@@ -348,7 +346,7 @@
                                 <span class="card-date"><i class="fa-solid fa-clock px-1"></i>May 2, 2020</span>
                             </small>
                             <div class="post__text">
-                                <p class="text-secondary pt-2 lh-sm mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur aliquam est, inventore eum doloribus facere voluptate repudiandae similique obcaecati, quia, illum perspiciatis ratione provident dolorem a ipsum. Nobis, error.<a href="#" class="ms-2">more</a></p>
+                                <p class="text-secondary pt-2 lh-sm mb-1 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur aliquam est, inventore eum doloribus facere voluptate repudiandae similique obcaecati, quia, illum perspiciatis ratione provident dolorem a ipsum. Nobis, error.<a href="#" class="ms-2">more</a></p>
                             </div>
                             <div class="post__catagory">
                                 <small class="text-primary text-uppercase fw-bold">arboriculture</small>
@@ -371,9 +369,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog__post-body border container rounded d-flex flex-start align-items-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start p-3 mt-3 xs-flex-wrap">
+                    <div class="blog__post-body border container-fluid rounded d-flex flex-wrap flex-sm-nowrap flex-md-nowrap align-items-center p-3 mt-3">
                         <div class="img-g container-fluid m-auto p-auto">
-                            <img src="./img/post-1.png" alt="post-1" class="figure-img img-fluid rounded">
+                            <img src="./img/post-1.png" alt="post-1" class="figure-img rounded">
                         </div>
                         <div class="text__content text-start m-auto p-auto">
                             <div class="post__title">
@@ -386,7 +384,7 @@
                                 <span class="card-date"><i class="fa-solid fa-clock px-1"></i>May 2, 2020</span>
                             </small>
                             <div class="post__text">
-                                <p class="text-secondary pt-2 lh-sm mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sint fugit aut minima porro dolorem, ratione atque possimus impedit iusto eos! Dolores labore ex eaque fugiat, illo voluptate ipsa possimus?<a href="#" class="ms-2">more</a></p>
+                                <p class="text-secondary pt-2 lh-sm mb-1 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sint fugit aut minima porro dolorem, ratione atque possimus impedit iusto eos! Dolores labore ex eaque fugiat, illo voluptate ipsa possimus?<a href="#" class="ms-2">more</a></p>
                             </div>
                             <div class="post__catagory lh-sm">
                                 <small class="text-primary text-uppercase fw-bold">business tips</small>
@@ -492,7 +490,7 @@
             <a href="" class="text-black"><i class="bi bi-house-door fw-bold"></i></a>
         </div>
         <button class="pop__btn active">
-               <i class="bi bi-search btn-glasss"></i>
+            <i class="bi bi-search btn-glasss"></i>
         </button>
         <div class="popup__wrapper d-lg-none">
             <div class="popup__inner hidden__popup">

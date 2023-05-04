@@ -317,10 +317,6 @@ body {
         display: block;
     }
 
-    .side__bar .recent__post {
-        display: none;
-    }
-
     .side__bar-footer {
         position: fixed;
         padding: 5px;
@@ -637,12 +633,7 @@ body {
     .side__bar-items .search__box form button {
         width: 100%;
     }
-
-
-    .side__bar .recent__post {
-        display: none;
-    }
-
+    
     .side__bar-footer {
         position: fixed;
         padding: 5px;
